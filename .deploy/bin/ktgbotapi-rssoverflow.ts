@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+import 'source-map-support/register';
+import * as cdk from 'aws-cdk-lib';
+import {KTGBotAPIRSSOverflowStack} from '../lib/ktgbotapi-rssoverflow-stack';
+
+const app = new cdk.App();
+new KTGBotAPIRSSOverflowStack(
+    app,
+    'ktgbotapi-rssoverflow-stack',
+    {}
+);
