@@ -40,5 +40,8 @@ jobs:
 
       - run: |
           npx cdk deploy \
+          --context TOKEN_TELEGRAM=${{ secrets.TOKEN_TELEGRAM }} \
+          --context CHAT_ID=${{ secrets.CHAT_ID }} \
+          --context THREAD_ID=${{ secrets.THREAD_ID }} \
           --require-approval=never
         working-directory: .deploy

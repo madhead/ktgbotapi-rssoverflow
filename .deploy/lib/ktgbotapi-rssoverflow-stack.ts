@@ -28,6 +28,9 @@ export class KTGBotAPIRSSOverflowStack extends cdk.Stack {
             environment: {
                 'LOG_THRESHOLD': 'INFO',
                 'TABLE_ENTRIES': entriesTable.tableName,
+                'TOKEN_TELEGRAM': this.node.tryGetContext('TOKEN_TELEGRAM'),
+                'CHAT_ID': this.node.tryGetContext('CHAT_ID'),
+                'THREAD_ID': this.node.tryGetContext('THREAD_ID'),
             },
         });
 

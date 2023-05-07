@@ -7,6 +7,10 @@ aws-lambda-java-core = "1.2.2"
 aws-lambda-java-log4j2 = "1.5.1"
 awssdk = "2.20.61"
 
+jackson = "2.15.0"
+
+rome = "2.1.0"
+
 tgbotapi = "7.1.2"
 
 log4j = "2.20.0"
@@ -20,6 +24,10 @@ aws-lambda-java-events = { group = "com.amazonaws", name = "aws-lambda-java-even
 aws-lambda-java-core = { group = "com.amazonaws", name = "aws-lambda-java-core", version.ref = "aws-lambda-java-core" }
 aws-lambda-java-log4j2 = { group = "com.amazonaws", name = "aws-lambda-java-log4j2", version.ref = "aws-lambda-java-log4j2" }
 dynamodb = { group = "software.amazon.awssdk", name = "dynamodb", version.ref = "awssdk" }
+
+jackson-databind = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson" }
+
+rome = { group = "com.rometools", name = "rome", version.ref = "rome" }
 
 tgbotapi = { group = "dev.inmo", name = "tgbotapi", version.ref = "tgbotapi" }
 

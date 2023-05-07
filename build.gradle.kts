@@ -12,4 +12,8 @@ java {
 dependencies {
     implementation(libs.bundles.aws.lambda)
     implementation(libs.bundles.log4j)
+    implementation(libs.jackson.databind)
+    implementation(libs.dynamodb)
+    implementation(libs.rome)
+    implementation(libs.tgbotapi)
 }
